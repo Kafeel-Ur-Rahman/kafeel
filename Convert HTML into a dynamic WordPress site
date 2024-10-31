@@ -1,0 +1,19 @@
+1. Set Up WordPress and ACF Plugin
+Install WordPress if you haven’t already.
+Install and activate the Advanced Custom Fields plugin.
+2. Create a New Theme or Child Theme
+If you’re not using an existing theme, create a new theme folder in /wp-content/themes/.
+Create essential files like style.css, index.php, and functions.php.
+Or, if you’re modifying an existing theme, consider using a child theme to keep it update-safe.
+3. Convert HTML Structure into WordPress Template Files
+Break your HTML into WordPress template files. Common files include:
+header.php for the head and header section.
+footer.php for the footer section.
+page.php for static pages.
+single.php for individual posts or content items.
+Insert WordPress functions like <?php bloginfo('name'); ?> or <?php wp_head(); ?> as needed for WordPress compatibility.
+4. Set Up ACF Fields for Dynamic Content
+Go to Custom Fields > Add New in the WordPress dashboard.
+Create Field Groups for each page or template area that needs dynamic content.
+For example, for a "Team" section, you could create fields like “Team Member Name,” “Position,” and “Image.”
+Assign these field groups to the relevant pages or templates using location rules.
